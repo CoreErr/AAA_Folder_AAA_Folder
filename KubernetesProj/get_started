@@ -1,0 +1,15 @@
+-- Steps to run kubernetes
+
+Open Docker Desktop
+
+Run this:
+
+docker start research-cluster-control-plane research-cluster-worker research-cluster-worker2
+
+kubectl get nodes
+
+# If the STATUS fr abv cmd comes as "READY", exe this
+kubectl get pods -A
+
+# Goto http://localhost:8080
+kubectl port-forward service/kube-ops-view 8080:80
