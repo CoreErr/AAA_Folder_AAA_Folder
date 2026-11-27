@@ -1,0 +1,16 @@
+- PUSH Changes
+git add . && git commit -m "Describe your changes here" && git push
+
+- Confirm local files match GitHub
+git status
+
+- View exact files/details changed in last push
+git show --stat oriin/master
+
+- Compact history
+git log -n 5 --oneline origin/master
+
+- How to undo the changes
+Just delete/change the file i want to change
+Then push
+git add . && git commit -m "Describe your changes here" && git push
